@@ -8,8 +8,42 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous">
 </head>
 <body <?php body_class(); ?>>
+<header class="hero">
+  <div class="container position-relative">
 
-<header class="site-hero">
+    <!-- centered pill menu -->
+    <div class="pill-nav">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#">بلاگ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">تالارها</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">نسخ خطی</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">گنجینه اشیا</a></li>
+      </ul>
+    </div>
+
+    <!-- top row: logo left, links right -->
+    <div class="d-flex align-items-center justify-content-between">
+      <a class="brand d-inline-flex align-items-center" href="#">
+        <img src="/path/to/logo.svg" alt="لوگو">
+      </a>
+
+      <nav class="top-links d-none d-md-block">
+        <a href="#">درباره سیمرغنامه</a>
+        <a class="me-3" href="#">تماس با ما</a>
+      </nav>
+    </div>
+
+    <!-- title + meta -->
+    <div class="hero-title">
+      <h1>عنوان پست در اینجا قرار می‌گیرد</h1>
+      <div class="meta">۳ روز پیش</div>
+    </div>
+
+    <!-- corner chevron -->
+    <div class="chev">&gt;</div>
+  </div>
+</header>
+<!-- <header class="site-hero">
     <div class="container-fluid">
     <div class="topbar">
       <div class="brand">
@@ -32,7 +66,7 @@
     </div>
     </div>
     <?php if (is_singular('post')): ?>
-    <div class="container">
+    <div class="page-title container text-white">
         <div class="col-8 mx-auto">
             <h1 class="post-title"><?php the_title(); ?></h1>
             <div class="post-meta">
@@ -45,4 +79,4 @@
         </div>
     </div>
     <?php endif; ?>
-</header>
+</header> -->
