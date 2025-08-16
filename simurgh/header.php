@@ -9,8 +9,8 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header class="site-hero bg-secondary">
-  <div class="container">
+<header class="site-hero">
+    <div class="container-fluid">
     <div class="topbar">
       <div class="brand">
         <a href="<?php echo esc_url(home_url('/')); ?>">
@@ -30,16 +30,19 @@
         ?>
       </nav>
     </div>
-
+    </div>
     <?php if (is_singular('post')): ?>
-      <h1 class="post-title"><?php the_title(); ?></h1>
-      <div class="post-meta">
-        <?php
-          $author = get_the_author();
-          $date   = get_the_date();
-          echo esc_html(implode(' • ', array_filter([$author, $date])));
-        ?>
-      </div>
+    <div class="container">
+        <div class="col-8 mx-auto">
+            <h1 class="post-title"><?php the_title(); ?></h1>
+            <div class="post-meta">
+                <?php
+                $author = get_the_author();
+                $date   = get_the_date();
+                echo esc_html(implode(' • ', array_filter([$author, $date])));
+                ?>
+            </div>
+        </div>
+    </div>
     <?php endif; ?>
-  </div>
 </header>
