@@ -18,6 +18,9 @@ body{
   color:var(--black); 
   line-height:1.75;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: Kahroba !important; 
+}
 /* Top banner */
 .site-hero{background:#bdbdbd; padding:48px 0 56px; color:#fff; text-align:center;}
 .site-hero .post-title{font-size:34px; font-weight:700; margin:16px auto 8px; max-width:var(--container);}
