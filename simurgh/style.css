@@ -13,7 +13,11 @@
   src: url("/media/Kahroba-VF[wght,wdth,CNTR]-YWISXCA6.ttf") format("truetype-variations"), url("./media/Kahroba-VF[wght,wdth,CNTR]-YWISXCA6.ttf") format("ttf");
 }
 html{scroll-behavior:smooth;}
-body{font-family: Kahroba, system-ui, Segoe UI, -apple-system, "IRANSans", "Vazirmatn", sans-serif; color:var(--black); line-height:1.75;}
+body{
+  font-family: Kahroba !important; 
+  color:var(--black); 
+  line-height:1.75;
+}
 /* Top banner */
 .site-hero{background:#bdbdbd; padding:48px 0 56px; color:#fff; text-align:center;}
 .site-hero .post-title{font-size:34px; font-weight:700; margin:16px auto 8px; max-width:var(--container);}
