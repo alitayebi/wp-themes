@@ -13,18 +13,22 @@
 
     <!-- centered pill menu -->
     <div class="pill-nav">
-      <ul class="nav">
-        <li class="nav-item"><a class="nav-link" href="#">بلاگ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">تالارها</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">نسخ خطی</a></li>
-        <li class="nav-item"><a class="nav-link active" href="#">گنجینه اشیا</a></li>
-      </ul>
+        <?php
+        wp_nav_menu([
+          'theme_location' => 'primary',
+          'container'      => false,
+          'items_wrap'     => '<ul class="nav">%3$s</ul>',
+          'fallback_cb'    => function () {
+            echo '<ul class="nav">' . wp_list_pages(['title_li' => '', 'echo' => 0]) . '</ul>';
+          }
+        ]);
+        ?>
     </div>
 
     <!-- top row: logo left, links right -->
     <div class="d-flex align-items-center justify-content-between">
       <a class="brand d-inline-flex align-items-center" href="#">
-        <img src="/path/to/logo.svg" alt="لوگو">
+        <img src="/assets/logo-inv.png" alt="لوگو">
       </a>
 
       <nav class="top-links d-none d-md-block">
@@ -32,11 +36,17 @@
         <a class="me-3" href="#">تماس با ما</a>
       </nav>
     </div>
-
+    <?php if (is_singular('post')): ?>
     <!-- title + meta -->
     <div class="hero-title">
-      <h1>عنوان پست در اینجا قرار می‌گیرد</h1>
-      <div class="meta">۳ روز پیش</div>
+      <h1><?php the_title(); ?></h1>
+      <div class="meta">
+        <?php
+        $author = get_the_author();
+        $date   = get_the_date();
+        echo esc_html(implode(' • ', array_filter([$author, $date])));
+        ?>
+      </div>
     </div>
 
     <!-- corner chevron -->
@@ -65,7 +75,6 @@
       </nav>
     </div>
     </div>
-    <?php if (is_singular('post')): ?>
     <div class="page-title container text-white">
         <div class="col-8 mx-auto">
             <h1 class="post-title"><?php the_title(); ?></h1>
