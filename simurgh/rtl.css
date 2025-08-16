@@ -1,0 +1,4 @@
+/* Auto-loaded by WordPress when site language is RTL */
+body, .post-content p, .topbar nav ul{direction:rtl}
+.topbar nav ul{flex-direction:row-reverse}
+.card-actions a{margin-inline-end:8px}
