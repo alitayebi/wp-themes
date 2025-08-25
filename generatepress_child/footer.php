@@ -1,5 +1,5 @@
 </main>
-<footer class="py-5 text-center bg-white">
+<footer class="py-5 text-center bg-white small">
     <div class="container text-md-start" bis_skin_checked="1">
         <div class="row" bis_skin_checked="1">
             <div class="col-md-3 mb-3" bis_skin_checked="1">
@@ -9,7 +9,7 @@
                 ۰۲۱۸۸۹۳۷۱۶۸
                 </p>
             </div>
-            <div class="col-md-2 mb-3" bis_skin_checked="1">
+            <div class="col-md-3 mb-3" bis_skin_checked="1">
                 <h5>درباره ما</h5>
                 <ul class="nav m-0 flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">هدف سیمرغنامه</a></li>
@@ -17,7 +17,7 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ما که هستیم و تا امروز چه کرده‌ایم؟</a></li>
                 </ul>
             </div>
-            <div class="col-md-2 mb-3" bis_skin_checked="1">
+            <div class="col-md-3 mb-3" bis_skin_checked="1">
                 <h5>سیمرغ شمایید</h5>
                 <ul class="nav m-0 flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">حامیان مالی</a></li>
@@ -25,7 +25,7 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">نهادهای همکار</a></li>
                 </ul>
             </div>
-            <div class="col-md-4 offset-md-1 mb-3" dir="ltr" bis_skin_checked="1">
+            <div class="col-md-3 offset-md-1 mb-3" dir="ltr" bis_skin_checked="1">
                 <p class="logo-wrapper">
                     <a href="/" class="logo"><img src="https://simurghnameh.com/assets/logo/logo-black.png" alt="سیمرغنامه"></a>
                 </p>
