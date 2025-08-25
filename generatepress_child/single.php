@@ -40,7 +40,7 @@ if ( $q->have_posts() ): ?>
             <?php if ( has_post_thumbnail() ) {
               the_post_thumbnail('related-thumb', ['class'=>'card-img-top img-fluid']);
             } else { ?>
-              <img class="card-img-top img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/placeholder-1x1.png'); ?>" alt="">
+              <img class="card-img-top img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri().'/placeholder.png'); ?>" alt="">
             <?php } ?>
           </a>
 
