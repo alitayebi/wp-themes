@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	do_action( 'generate_before_header' );
   $size = is_singular('post') ? 480 : 300;
 ?>
-<header class="hero <? if (is_front_page()): ?>bg-gray-100<? else: ?>bg-gray-200<? endif ?> d-flex align-items-end flex-column" style="min-height: <?php echo $size; ?>px;">
+<header class="hero <?php if (is_front_page()): ?>bg-gray-100<?php else: ?>bg-gray-200<?php endif ?> d-flex align-items-end flex-column" style="min-height: <?php echo $size; ?>px;">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg">
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,7 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	do_action( 'generate_after_header' );
 	?>
 
-	<main class="<? if (is_front_page()): ?>bg-gray-100<? else: ?>bg-light<? endif ?>">
+	<main class="<?php if (is_front_page()): ?>bg-gray-100<?php else: ?>bg-light<?php endif ?>">
 		<?php
 		/**
 		 * generate_inside_site_container hook.
