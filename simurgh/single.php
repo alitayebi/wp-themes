@@ -29,7 +29,14 @@ get_header(); ?>
         while ($q->have_posts()): $q->the_post(); ?>
           <article class="card">
             <a class="card-thumb" href="<?php the_permalink(); ?>">
-              <?php if (has_post_thumbnail()) { the_post_thumbnail('card-thumb'); } ?>
+              <?php if ( has_post_thumbnail() ) {
+                the_post_thumbnail( $img_size, [ 'class' => $img_class ] );
+              } else { ?>
+                <img
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() . '/placeholder.png' ); ?>"
+                  class="<?php echo esc_attr( $img_class ); ?>"
+                  alt="<?php esc_attr_e('Placeholder','gp-child'); ?>">
+              <?php } ?>
             </a>
             <div class="card-body">
               <h4 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
