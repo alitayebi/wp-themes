@@ -70,17 +70,13 @@ if ( ! defined( 'ABSPATH' ) ) {
       <?php
       ?>
       <a class="navbar-brand brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <? if (is_front_page()): ?>
-        <!-- Front-page logo -->
-        <img src="https://simurghnameh.com/assets/logo-l0.png" 
-            alt="<?php bloginfo('name'); ?>" 
-            class="logo logo--front">
-        <? else: ?>
-        <!-- Default logo -->
-        <img src="https://simurghnameh.com/assets/logo-inv.png" 
-            alt="<?php bloginfo('name'); ?>" 
-            class="logo logo--default">
-        <? endif; ?>
+          <?php if ( is_front_page() ) : ?>
+            <!-- Front-page logo -->
+            <img src="https://simurghnameh.com/assets/logo-l0.png" alt="Simurghnameh" class="logo logo--front">
+          <?php else : ?>
+            <!-- Default logo -->
+            <img src="https://simurghnameh.com/assets/logo-inv.png" alt="Simurghnameh" class="logo logo--default">
+          <?php endif; ?>
       </a>
     </nav>
   </div>
