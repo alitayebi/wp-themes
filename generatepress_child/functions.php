@@ -5,10 +5,7 @@
  * Add your custom PHP in this file.
  * Only edit this file if you have direct access to it on your server (to fix errors if they happen).
  */
-<?php
-/**
- * Persian digits helper
- */
+
 function my_fa_digits_map() {
   // Western 0-9 + Arabic-Indic (٠-٩) → Persian (۰-۹)
   return [
