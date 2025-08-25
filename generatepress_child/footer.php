@@ -25,7 +25,7 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">نهادهای همکار</a></li>
                 </ul>
             </div>
-            <div class="col-md-3 offset-md-1 mb-3" dir="ltr" bis_skin_checked="1">
+            <div class="col-md-3 mb-3" dir="ltr" bis_skin_checked="1">
                 <p class="logo-wrapper">
                     <a href="/" class="logo"><img src="https://simurghnameh.com/assets/logo/logo-black.png" alt="سیمرغنامه"></a>
                 </p>
