@@ -76,7 +76,7 @@
     width: 2.5em !important;
     height: 2.5em !important;
   }  
-  .nav-item a {
+  .menu-item a {
     text-decoration: none !important;
   }
   @media screen and (max-width: 960px) {
