@@ -76,7 +76,7 @@ get_header(); ?>
             </a>
           </h3>
 
-          <div class="small text-muted">
+          <div class="small fd text-muted">
             <?php
               echo esc_html(
                 sprintf( __('%s پیش','gp-child'),

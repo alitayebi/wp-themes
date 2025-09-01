@@ -49,7 +49,7 @@ if ( $q->have_posts() ): ?>
               <a href="<?php the_permalink(); ?>" class="link-dark text-decoration-none text-reset"><?php the_title(); ?></a>
             </h4>
 
-            <div class="text-muted small mb-2">
+            <div class="text-muted fd small mb-2">
               <?php
                 $ago = human_time_diff( get_the_time('U'), current_time('timestamp') );
                 echo esc_html( sprintf( __('%s پیش', 'simurgh'), $ago ) );

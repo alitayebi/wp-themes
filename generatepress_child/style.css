@@ -19,11 +19,24 @@
     font-family: Kahroba;
     src: url("/media/Kahroba-VF[wght,wdth,CNTR]-YWISXCA6.ttf") format("truetype-variations"), url("./media/Kahroba-VF[wght,wdth,CNTR]-YWISXCA6.ttf") format("ttf");
   }
+  @font-face {
+    font-family: Sahel FD;
+    src: url('inc/Sahel-FD.eot');
+    src: url('inc/Sahel-FD.eot?#iefix') format('embedded-opentype'),
+         url('inc/Sahel-FD.woff2') format('woff2'),
+         url('inc/Sahel-FD.woff') format('woff'),
+         url('inc/Sahel-FD.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
   html{scroll-behavior:smooth;}
   body{
     font-family: Kahroba !important; 
     color:var(--black); 
     line-height:1.75;
+  }
+  .fd{
+    font-family: Sahel FD !important; 
   }
   .bg-gray-100 {
     background:var(--gray-100);

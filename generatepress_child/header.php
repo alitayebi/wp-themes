@@ -85,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="row">
         <div class="col-sm-8 px-4 mx-auto">
           <h1><?php the_title(); ?></h1>
-          <div class="meta">
+          <div class="meta fd">
           <?php
           $author = get_the_author();
 
