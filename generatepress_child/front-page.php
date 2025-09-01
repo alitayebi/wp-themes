@@ -17,7 +17,7 @@ get_header(); ?>
         <div class="row">
             <div class="col-6 col-lg-8">
                 <h1 class="fw-bold display-6 m-0"><?php _e('بلاگ','gp-child'); ?></h1>
-                <div class="small text-muted">
+                <div class="small text-muted fd">
                     <?php $pc = wp_count_posts('post')->publish;
                     printf( _n('%s پست','%s پست',$pc,'gp-child'), number_format_i18n($pc) ); ?>
                 </div>
