@@ -10,19 +10,21 @@
                 </p>
             </div>
             <div class="col-md-3 mb-3" bis_skin_checked="1">
-                <h5>درباره ما</h5>
+                <h5>سیمرغنامه</h5>
                 <ul class="nav m-0 flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">هدف سیمرغنامه</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">روش سیمرغنامه</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ما که هستیم و تا امروز چه کرده‌ایم؟</a></li>
+                    <li class="nav-item mb-2"><a href="/about-us#s01" class="nav-link p-0 text-body-secondary">چرا سیمرغنامه؟</a></li>
+                    <li class="nav-item mb-2"><a href="/about-us#s02" class="nav-link p-0 text-body-secondary">رؤیای سیمرغنامه</a></li>
+                    <li class="nav-item mb-2"><a href="/about-us#s03" class="nav-link p-0 text-body-secondary">روش ما</a></li>
+                    <li class="nav-item mb-2"><a href="/about-us#s04" class="nav-link p-0 text-body-secondary">تا امروز چه کرده‌ایم؟</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-3" bis_skin_checked="1">
                 <h5>سیمرغ شمایید</h5>
                 <ul class="nav m-0 flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">حامیان مالی</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">همکاران امروز</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">نهادهای همکار</a></li>
+                    <li class="nav-item mb-2"><a href="/about-us#s05" class="nav-link p-0 text-body-secondary">شما چه کمکی می‌کنید؟</a></li>
+                    <li class="nav-item mb-2"><a href="/about-us#s06" class="nav-link p-0 text-body-secondary">داوطلبان</a></li>
+                    <li class="nav-item mb-2"><a href="/about-us#s07" class="nav-link p-0 text-body-secondary">نهادهای همکار</a></li>
+                    <li class="nav-item mb-2"><a href="/about-us#s08" class="nav-link p-0 text-body-secondary">همکاران امروز</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-3" dir="ltr" bis_skin_checked="1">

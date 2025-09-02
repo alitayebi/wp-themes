@@ -49,10 +49,10 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="collapse navbar-collapse  ps-5 ms-5 mt-5" id="navbarSupportedContent">
         <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">درباره سیمرغنامه</a>
+            <a class="nav-link" href="/about-en">about us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">تماس با ما</a>
+            <a class="nav-link" aria-current="page" href="/about-us">درباره سیمرغنامه</a>
           </li>
         </ul>
         <?php
