@@ -39,8 +39,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 */
 	do_action( 'generate_before_header' );
   $size = is_singular('post') ? 480 : 300;
-?>
-<header class="hero <?php if (is_front_page()): ?>bg-gray-100<?php else: ?>bg-gray-200<?php endif ?> d-flex align-items-end flex-column" style="min-height: <?php echo $size; ?>px;">
+  $bg_style = '';
+  $color_class = is_front_page() ? 'bg-gray-100' : 'bg-gray-200';
+  $extra_class = '';
+  
+  if ( is_singular('post') && has_post_thumbnail() ) {
+      $bg_url = get_the_post_thumbnail_url(null, 'full');
+      if ( $bg_url ) {
+          $bg_style = sprintf(
+              "background-image: url('%s'); background-size: cover; background-position: center; background-repeat: no-repeat;",
+              esc_url($bg_url)
+          );
+          $color_class = '';
+          $extra_class = 'hero--has-bg'; // mark when background is active
+      }
+  }
+  ?>
+  <header
+    class="hero <?php echo esc_attr("$color_class $extra_class"); ?> d-flex align-items-end flex-column position-relative"
+    style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg">
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
