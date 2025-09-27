@@ -60,10 +60,10 @@ if ( ! defined( 'ABSPATH' ) ) {
     style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0" type="button"data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse  ps-5 ms-5 mt-5" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="/about-en">about us</a>
@@ -96,6 +96,35 @@ if ( ! defined( 'ABSPATH' ) ) {
           <?php endif; ?>
       </a>
     </nav>
+
+<div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="">
+    <img class='mobile-menu-logo' src="https://simurghnameh.com/assets/logo-l02.png" class="layer-02">    
+  
+  </div>
+  <div class="offcanvas-body">
+        
+        <?php
+        wp_nav_menu([
+          'theme_location' => 'primary',
+          'container'      => false,
+          'items_wrap'     => '<ul class="navbar-nav mx-0 mb-2 mb-lg-0 fw-bold">%3$s</ul>',
+          'fallback_cb'    => false,
+          // wrap <a> text in a span with the class you want
+          'link_before'    => '<span class="nav-link">', 
+          'link_after'     => '</span>',
+        ]);
+        ?>
+        <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/about-en">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/about-us">درباره سیمرغنامه</a>
+          </li>
+        </ul>        
+  </div>
+</div>    
   </div>
   <?php if (is_singular('post')): ?>
   <div class="container mt-auto pt-5">
