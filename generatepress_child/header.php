@@ -59,11 +59,9 @@ if (!defined('ABSPATH')) {
     }
   }
   ?>
-  <header
-    class="hero <?php echo esc_attr("$color_class $extra_class"); ?> d-flex p-0 align-items-end flex-column position-relative"
-    style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>">
+  <header class="hero p-0" >
     <div class="container-fluid p-0">
-      <div class="row">
+      <div class="row <?php echo esc_attr("$color_class $extra_class"); ?> d-flex p-0 align-items-end position-relative" style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>">
         <div class="col">
           <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
