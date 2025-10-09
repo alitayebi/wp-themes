@@ -63,44 +63,58 @@ if (!defined('ABSPATH')) {
     class="hero <?php echo esc_attr("$color_class $extra_class"); ?> d-flex p-0 align-items-end flex-column position-relative"
     style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>">
     <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-          aria-controls="offcanvasTop">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link text-black2" href="/about-en">about us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-black2" aria-current="page" href="/about-us">دربارۀ سیمرغنامه</a>
-            </li>
-          </ul>
-          <?php
-          wp_nav_menu([
-            'theme_location' => 'primary',
-            'container' => false,
-            'items_wrap' => '<ul class="navbar-nav menu-secondary px-2 me-auto mb-2 mb-lg-0">%3$s</ul>',
-            'fallback_cb' => false,
-            // wrap <a> text in a span with the class you want
-            'link_before' => '<span class="nav-link text-black2">',
-            'link_after' => '</span>',
-          ]);
-          ?>
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-black2" href="/about-en">about us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black2" aria-current="page" href="/about-us">دربارۀ سیمرغنامه</a>
+                </li>
+              </ul>
+              <?php
+              wp_nav_menu([
+                'theme_location' => 'primary',
+                'container' => false,
+                'items_wrap' => '<ul class="navbar-nav menu-secondary px-2 me-auto mb-2 mb-lg-0">%3$s</ul>',
+                'fallback_cb' => false,
+                // wrap <a> text in a span with the class you want
+                'link_before' => '<span class="nav-link text-black2">',
+                'link_after' => '</span>',
+              ]);
+              ?>
+            </div>
+            <?php
+            ?>
+          </nav>
         </div>
-        <?php
-        ?>
-        <a class="navbar-brand brand" href="<?php echo esc_url(home_url('/')); ?>">
-          <?php if (is_front_page()): ?>
-            <!-- Front-page logo -->
-            <img src="https://simurghnameh.com/assets/logo-l0.png" alt="Simurghnameh" class="logo logo--front">
-          <?php else: ?>
-            <!-- Default logo -->
-            <img src="https://simurghnameh.com/assets/logo-inv.png" alt="Simurghnameh" class="logo logo--default">
-          <?php endif; ?>
-        </a>
-      </nav>
+        <div class="col-6 col-lg-8">
+          <h1 class="fw-bold page-title m-0"><?php _e('شیوه‌نامه‌ها', 'gp-child'); ?></h1>
+          <div class="small text-muted fd">
+            <?php $pc = wp_count_posts('post')->publish;
+            printf(_n('%s مطلب', '%s مطلب', $pc, 'gp-child'), number_format_i18n($pc)); ?>
+          </div>
+        </div>
+        <div class="col">
+          <a class="navbar-brand brand" href="<?php echo esc_url(home_url('/')); ?>">
+            <?php if (is_front_page()): ?>
+              <!-- Front-page logo -->
+              <img src="https://simurghnameh.com/assets/logo-l0.png" alt="Simurghnameh" class="logo logo--front">
+            <?php else: ?>
+              <!-- Default logo -->
+              <img src="https://simurghnameh.com/assets/logo-inv.png" alt="Simurghnameh" class="logo logo--default">
+            <?php endif; ?>
+          </a>
+        </div>
+      </div>
+
 
       <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="">
