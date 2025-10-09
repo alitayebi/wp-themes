@@ -69,7 +69,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             <a class="nav-link text-black2" href="/about-en">about us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black2" aria-current="page" href="/about-us">درباره سیمرغنامه</a>
+            <a class="nav-link text-black2" aria-current="page" href="/about-us">دربارۀ سیمرغنامه</a>
           </li>
         </ul>
         <?php
