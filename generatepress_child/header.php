@@ -72,21 +72,17 @@ if ( ! defined( 'ABSPATH' ) ) {
             <a class="nav-link" aria-current="page" href="/about-us">درباره سیمرغنامه</a>
           </li>
         </ul>
-        <div class="menu">
-          <div class="menu-secondary blurry-background">
-            <?php
-            wp_nav_menu([
-              'theme_location' => 'primary',
-              'container'      => false,
-              'items_wrap'     => '<ul class="navbar-nav bg-white rounded-pill px-3 me-auto mb-2 mb-lg-0">%3$s</ul>',
-              'fallback_cb'    => false,
-              // wrap <a> text in a span with the class you want
-              'link_before'    => '<span class="nav-link">', 
-              'link_after'     => '</span>',
-            ]);
-            ?>
-          </div>
-        </div>
+        <?php
+        wp_nav_menu([
+          'theme_location' => 'primary',
+          'container'      => false,
+          'items_wrap'     => '<ul class="navbar-nav bg-white menu-secondary px-3 me-auto mb-2 mb-lg-0">%3$s</ul>',
+          'fallback_cb'    => false,
+          // wrap <a> text in a span with the class you want
+          'link_before'    => '<span class="nav-link">', 
+          'link_after'     => '</span>',
+        ]);
+        ?>
       </div>
       <?php
       ?>

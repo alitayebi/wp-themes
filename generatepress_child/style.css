@@ -42,16 +42,7 @@ body {
   color: var(--black);
   line-height: 1.75;
 }
-.menu-secondary.blurry-background {
-  position: fixed;
-  top: 30px;
-  right: calc(20% + 57.6px);
-  margin: 0px;
-  padding: 0px;
-  z-index: 100;
-  transition: filter 0.2s    
-}
-.menu-secondary.blurry-background::before {
+.menu-secondary::before {
   content: " ";
   display: inline-block;
   width: 24px;
@@ -59,7 +50,7 @@ body {
   vertical-align: bottom;
   background-image: url("/assets/components/round-right.png")    
 }
-menu-secondary.blurry-background::after {
+.menu-secondary::after {
   content: " ";
   display: inline-block;
   width: 24px;
