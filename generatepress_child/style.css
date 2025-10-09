@@ -42,7 +42,9 @@ body {
   color: var(--black);
   line-height: 1.75;
 }
-
+.text-black {
+  color: #1f1f1f !important;
+}
 .menu-item {
   background-color: white;
 }
