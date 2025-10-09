@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <button class="navbar-toggler border-0" type="button"data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="/about-en">about us</a>

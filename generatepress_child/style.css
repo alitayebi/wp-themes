@@ -46,6 +46,14 @@ body {
   color: var(--black) !important;
   font-weight: 500 !important;
 }
+.menu {
+  position: fixed;
+  top: 30px;
+  right: 96px;
+  margin: 0;
+  padding: 0;
+  z-index: 100;  
+}
 .menu-item {
   background-color: white;
   padding-top: 5px;
