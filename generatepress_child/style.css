@@ -42,32 +42,30 @@ body {
   color: var(--black);
   line-height: 1.75;
 }
-@media screen and (max-width: 960px) {
-  .menu.menu-secondary.blurry-background {
-    position: fixed;
-    top: 30px;
-    right: calc(20% + 57.6px);
-    margin: 0px;
-    padding: 0px;
-    z-index: 100;
-    transition: filter 0.2s    
-  }
-  .menu.menu-secondary.blurry-background::before {
-    content: " ";
-    display: inline-block;
-    width: 24px;
-    height: 48px;
-    vertical-align: bottom;
-    background-image: url("/assets/components/round-right.png")    
-  }
-  .menu.menu-secondary.blurry-background::after {
-    content: " ";
-    display: inline-block;
-    width: 24px;
-    height: 48px;
-    vertical-align: bottom;
-    background-image: url("/assets/components/round-left.png");    
-  }
+.menu-secondary.blurry-background {
+  position: fixed;
+  top: 30px;
+  right: calc(20% + 57.6px);
+  margin: 0px;
+  padding: 0px;
+  z-index: 100;
+  transition: filter 0.2s    
+}
+.menu-secondary.blurry-background::before {
+  content: " ";
+  display: inline-block;
+  width: 24px;
+  height: 48px;
+  vertical-align: bottom;
+  background-image: url("/assets/components/round-right.png")    
+}
+menu-secondary.blurry-background::after {
+  content: " ";
+  display: inline-block;
+  width: 24px;
+  height: 48px;
+  vertical-align: bottom;
+  background-image: url("/assets/components/round-left.png");    
 }
 
 
