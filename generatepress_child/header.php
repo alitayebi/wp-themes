@@ -108,7 +108,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         wp_nav_menu([
           'theme_location' => 'primary',
           'container'      => false,
-          'items_wrap'     => '<ul class="navbar-nav mx-0 mb-2 mb-lg-0 fw-bold">%3$s</ul>',
+          'items_wrap'     => '<ul class="navbar-nav mx-0 pt-1 mb-lg-0 fw-bold">%3$s</ul>',
           'fallback_cb'    => false,
           // wrap <a> text in a span with the class you want
           'link_before'    => '<span class="nav-link">', 
