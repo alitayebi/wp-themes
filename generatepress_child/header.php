@@ -90,6 +90,7 @@ if (!defined('ABSPATH')) {
         </div>
         <?php
         ?>
+      </nav>
         <a class="navbar-brand brand" href="<?php echo esc_url(home_url('/')); ?>">
           <?php if (is_front_page()): ?>
             <!-- Front-page logo -->
@@ -99,7 +100,6 @@ if (!defined('ABSPATH')) {
             <img src="https://simurghnameh.com/assets/logo-inv.png" alt="Simurghnameh" class="logo logo--default">
           <?php endif; ?>
         </a>
-      </nav>
 
       <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="">
