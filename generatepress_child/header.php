@@ -133,51 +133,52 @@ if (!defined('ABSPATH')) {
                   <div class="float-end"><i class="bi bi-share-fill"></i></div>
                 </div>
               </div>
-            <?php endif; ?>
-          </div>
-          <div class="col">
-            <a class="navbar-brand brand" href="<?php echo esc_url(home_url('/')); ?>">
-              <?php if (is_front_page()): ?>
-                <!-- Front-page logo -->
-                <img src="https://simurghnameh.com/assets/logo-l0.png" alt="Simurghnameh" class="logo logo--front">
-              <?php else: ?>
-                <!-- Default logo -->
-                <img src="https://simurghnameh.com/assets/logo-inv.png" alt="Simurghnameh" class="logo logo--default">
-              <?php endif; ?>
-            </a>
-          </div>
+            </div>
+          <?php endif; ?>
         </div>
-
-
-        <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-          <div class="">
-            <img class='mobile-menu-logo' src="https://simurghnameh.com/assets/logo-l02.png" class="layer-02">
-
-          </div>
-          <div class="offcanvas-body">
-
-            <?php
-            wp_nav_menu([
-              'theme_location' => 'primary',
-              'container' => false,
-              'items_wrap' => '<ul class="navbar-nav mx-0 pt-1 mb-lg-0 fw-bold">%3$s</ul>',
-              'fallback_cb' => false,
-              // wrap <a> text in a span with the class you want
-              'link_before' => '<span class="nav-link">',
-              'link_after' => '</span>',
-            ]);
-            ?>
-            <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="/about-en">about us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/about-us">درباره سیمرغنامه</a>
-              </li>
-            </ul>
-          </div>
+        <div class="col">
+          <a class="navbar-brand brand" href="<?php echo esc_url(home_url('/')); ?>">
+            <?php if (is_front_page()): ?>
+              <!-- Front-page logo -->
+              <img src="https://simurghnameh.com/assets/logo-l0.png" alt="Simurghnameh" class="logo logo--front">
+            <?php else: ?>
+              <!-- Default logo -->
+              <img src="https://simurghnameh.com/assets/logo-inv.png" alt="Simurghnameh" class="logo logo--default">
+            <?php endif; ?>
+          </a>
         </div>
       </div>
+
+
+      <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="">
+          <img class='mobile-menu-logo' src="https://simurghnameh.com/assets/logo-l02.png" class="layer-02">
+
+        </div>
+        <div class="offcanvas-body">
+
+          <?php
+          wp_nav_menu([
+            'theme_location' => 'primary',
+            'container' => false,
+            'items_wrap' => '<ul class="navbar-nav mx-0 pt-1 mb-lg-0 fw-bold">%3$s</ul>',
+            'fallback_cb' => false,
+            // wrap <a> text in a span with the class you want
+            'link_before' => '<span class="nav-link">',
+            'link_after' => '</span>',
+          ]);
+          ?>
+          <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/about-en">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/about-us">درباره سیمرغنامه</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
 
   <?php
