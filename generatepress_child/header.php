@@ -119,7 +119,7 @@ if (!defined('ABSPATH')) {
             </div>
           <?php else: ?>
             <div class="row mt-auto pt-5">
-              <div class="col-sm-8 px-4 mx-auto">
+              <div class="col px-4 mx-auto">
                 <h1><?php the_title(); ?></h1>
                 <div class="meta fd">
                   <?php
