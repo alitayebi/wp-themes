@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           'items_wrap'     => '<ul class="navbar-nav menu-secondary px-3 me-auto mb-2 mb-lg-0">%3$s</ul>',
           'fallback_cb'    => false,
           // wrap <a> text in a span with the class you want
-          'link_before'    => '<span class="nav-link text-black">', 
+          'link_before'    => '<span class="nav-link text-black2">', 
           'link_after'     => '</span>',
         ]);
         ?>
