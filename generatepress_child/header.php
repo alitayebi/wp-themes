@@ -66,10 +66,10 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="/about-en">about us</a>
+            <a class="nav-link text-black2" href="/about-en">about us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/about-us">درباره سیمرغنامه</a>
+            <a class="nav-link text-black2" aria-current="page" href="/about-us">درباره سیمرغنامه</a>
           </li>
         </ul>
         <?php
