@@ -16,7 +16,7 @@ get_header(); ?>
       <div class="col-sm-8 mx-auto">
         <div class="row">
             <div class="col-6 col-lg-8">
-                <h1 class="fw-bold display-6 m-0"><?php _e('شیوه‌نامه‌ها','gp-child'); ?></h1>
+                <h1 class="fw-bold page-title m-0"><?php _e('شیوه‌نامه‌ها','gp-child'); ?></h1>
                 <div class="small text-muted fd">
                     <?php $pc = wp_count_posts('post')->publish;
                     printf( _n('%s مطلب','%s مطلب',$pc,'gp-child'), number_format_i18n($pc) ); ?>
