@@ -42,7 +42,7 @@ body {
   color: var(--black);
   line-height: 1.75;
 }
-@media(screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .menu.menu-secondary.blurry-background {
     position: fixed;
     top: 30px;
