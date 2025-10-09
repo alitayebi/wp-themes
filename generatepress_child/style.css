@@ -15,7 +15,7 @@
   --gray-100: #ebebeb;
   --gray-200: #9e9e9e;
   --gray-700: #4a4a4a;
-  --black: #111;
+  --black: #1f1f1f;
 }
 
 @font-face {
@@ -42,8 +42,9 @@ body {
   color: var(--black);
   line-height: 1.75;
 }
-.text-black {
-  color: #1f1f1f !important;
+.text-black2 {
+  color: var(--black) !important;
+  font-weight: 500 !important;
 }
 .menu-item {
   background-color: white;
