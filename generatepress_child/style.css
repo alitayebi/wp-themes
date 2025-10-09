@@ -48,6 +48,7 @@ body {
 }
 .menu-item {
   background-color: white;
+  padding-top: 10px;
 }
 .menu-secondary::before {
   content: " ";
