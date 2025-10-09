@@ -42,6 +42,10 @@ body {
   color: var(--black);
   line-height: 1.75;
 }
+
+.menu-item {
+  background-color: white;
+}
 .menu-secondary::before {
   content: " ";
   display: inline-block;
