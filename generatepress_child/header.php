@@ -56,9 +56,9 @@ if ( ! defined( 'ABSPATH' ) ) {
   }
   ?>
   <header
-    class="hero <?php echo esc_attr("$color_class $extra_class"); ?> d-flex align-items-end flex-column position-relative"
+    class="hero <?php echo esc_attr("$color_class $extra_class"); ?> d-flex p-0 align-items-end flex-column position-relative"
     style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>">
-  <div class="container-fluid">
+  <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg">
       <button class="navbar-toggler border-0" type="button"data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
         <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         wp_nav_menu([
           'theme_location' => 'primary',
           'container'      => false,
-          'items_wrap'     => '<ul class="navbar-nav menu-secondary px-3 me-auto mb-2 mb-lg-0">%3$s</ul>',
+          'items_wrap'     => '<ul class="navbar-nav menu-secondary px-2 me-auto mb-2 mb-lg-0">%3$s</ul>',
           'fallback_cb'    => false,
           // wrap <a> text in a span with the class you want
           'link_before'    => '<span class="nav-link text-black2">', 
