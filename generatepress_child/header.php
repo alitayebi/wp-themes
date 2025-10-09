@@ -62,6 +62,7 @@ if (!defined('ABSPATH')) {
   <header
     class="hero <?php echo esc_attr("$color_class $extra_class"); ?> d-flex p-0 align-items-end flex-column position-relative"
     style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>">
+    <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
           aria-controls="offcanvasTop">
@@ -90,7 +91,6 @@ if (!defined('ABSPATH')) {
         </div>
         <?php
         ?>
-      </nav>
         <a class="navbar-brand brand" href="<?php echo esc_url(home_url('/')); ?>">
           <?php if (is_front_page()): ?>
             <!-- Front-page logo -->
@@ -100,6 +100,7 @@ if (!defined('ABSPATH')) {
             <img src="https://simurghnameh.com/assets/logo-inv.png" alt="Simurghnameh" class="logo logo--default">
           <?php endif; ?>
         </a>
+      </nav>
 
       <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="">
@@ -129,6 +130,7 @@ if (!defined('ABSPATH')) {
           </ul>
         </div>
       </div>
+    </div>
     <?php if (is_singular('post')): ?>
       <div class="container mt-auto pt-5">
         <div class="row">
