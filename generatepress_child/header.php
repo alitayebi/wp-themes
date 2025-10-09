@@ -95,9 +95,9 @@ if (!defined('ABSPATH')) {
             ?>
           </nav>
         </div>
-        <div class="col-6 col-lg-8">
-          <h1 class="fw-bold page-title m-0"><?php _e('شیوه‌نامه‌ها', 'gp-child'); ?></h1>
-          <div class="small text-muted fd">
+        <div class="col-6">
+          <h1 class="fw-bold text-black2 page-title m-0"><?php _e('شیوه‌نامه‌ها', 'gp-child'); ?></h1>
+          <div class="text-muted fd">
             <?php $pc = wp_count_posts('post')->publish;
             printf(_n('%s مطلب', '%s مطلب', $pc, 'gp-child'), number_format_i18n($pc)); ?>
           </div>
