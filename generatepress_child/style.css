@@ -318,7 +318,6 @@ body:has(#offcanvasTop.show) .navbar-toggler[data-bs-target="#offcanvasTop"] .na
 
 .entry-content {
   line-height: 2;
-  text-align: justify;
 }
 
 .mobile-menu-btn {
