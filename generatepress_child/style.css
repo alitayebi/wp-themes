@@ -338,3 +338,25 @@ body:has(#offcanvasTop.show) .navbar-toggler[data-bs-target="#offcanvasTop"] .na
   margin-left: 20px;
   float: left;
 }
+
+button,
+button:hover,
+button:focus,
+button:active,
+button:visited,
+button:disabled,
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:visited,
+.btn:disabled {
+  pointer-events: none !important;   /* disables clicking */
+  user-select: none !important;      /* disables text selection */
+  box-shadow: none !important;       /* remove focus shadows */
+  outline: none !important;          /* remove outlines */
+  background-color: inherit !important; /* keep background static */
+  color: inherit !important;           /* keep text color static */
+  cursor: default !important;          /* default cursor */
+  /* Add any other styles you want to keep static */
+}
