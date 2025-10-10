@@ -128,7 +128,11 @@ if (!defined('ABSPATH')) {
 
                   echo esc_html(implode(' • ', array_filter([$author, $relative])));
                   ?>
-                  <div class="float-end"><i class="bi bi-share-fill"></i></div>
+                  <div class="float-end">
+                    <button type="button" class="btn btn-light rounded-circle shadow-sm btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="bottom" data-copy="{{site.url}}{{page.url}}" title="کپی لینک">
+                      <i class="bi bi-share-fill"></i>
+                    </button>                    
+                  </div>
                 </div>
               </div>
             </div>
