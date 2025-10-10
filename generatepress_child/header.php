@@ -60,7 +60,7 @@ if (!defined('ABSPATH')) {
   }
   ?>
   <header class="hero p-0" >
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 pb-2">
       <div class="row <?php echo esc_attr("$color_class $extra_class"); ?> d-flex p-0 align-items-end position-relative" <?php if (is_single()): ?> style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>"<?php endif; ?>>
         <div class="col">
           <nav class="navbar navbar-expand-lg">
