@@ -2,14 +2,14 @@
 <footer class="py-5 text-center bg-white small">
     <div class="container text-md-start" bis_skin_checked="1">
         <div class="row" bis_skin_checked="1">
-            <div class="col-md-3 mb-3" bis_skin_checked="1">
+            <div class="col-md-3 mb-3 order-3 order-md-1" bis_skin_checked="1">
                 <h5>تماس با ما</h5>
                 <p class="text-muted">
                     تهران، بلوار کریم‌خان، خیابان نجات‌الهی، خیابان اراک، کوچه مهر، بن‌بست خسروی، پلاک ۴، زنگ ۱<br>
                     ۰۲۱۸۸۹۳۷۱۶۸
                 </p>
             </div>
-            <div class="col-md-3 mb-3" bis_skin_checked="1">
+            <div class="col-md-3 mb-3 order-1 order-md-2" bis_skin_checked="1">
                 <h5>سیمرغنامه</h5>
                 <?php
                 wp_nav_menu([
@@ -18,12 +18,12 @@
                     'items_wrap' => '<ul class="nav m-0 flex-column">%3$s</ul>',
                     'fallback_cb' => false,
                     // wrap <a> text in a span with the class you want
-                    'link_before' => '<span class="nav-link">',
+                    'link_before' => '<span class="nav-link text-muted">',
                     'link_after' => '</span>',
                 ]);
                 ?>                
             </div>
-            <div class="col-md-3 mb-3" bis_skin_checked="1">
+            <div class="col-md-3 mb-3 order-2 order-md-3" bis_skin_checked="1">
                 <h5>سی‌مرغ شمایید</h5>
                 <?php
                 wp_nav_menu([
@@ -37,7 +37,7 @@
                 ]);
                 ?>
             </div>
-            <div class="col-md-3 mb-3" dir="ltr" bis_skin_checked="1">
+            <div class="col-md-3 mb-3 order-4 order-md-4" dir="ltr" bis_skin_checked="1">
                 <p class="logo-wrapper">
                     <a href="/" class="logo"><img src="https://simurghnameh.com/assets/logo/logo-black.png"
                             alt="سیمرغنامه"></a>
