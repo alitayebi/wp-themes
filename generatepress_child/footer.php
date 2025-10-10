@@ -1,7 +1,6 @@
 </main>
 <footer class="py-5 text-center bg-white small">
-    <div class="container text-md-start" bis_skin_checked="1">
-        <div class="row" bis_skin_checked="1">
+        <div class="row  text-md-start" bis_skin_checked="1">
             <div class="col-md-3 mb-3 order-3 order-md-1" bis_skin_checked="1">
                 <h5>تماس با ما</h5>
                 <p class="text-muted">
@@ -65,7 +64,6 @@
             </p>
             <p>All right reserved to SIMURGHNAMEH 2025</p>
         </div>
-    </div>
 </footer>
 <script>
     function copyToClipboard(text, el) {

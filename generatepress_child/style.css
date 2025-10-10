@@ -344,10 +344,21 @@ button:active,
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background-color: inherit !important; /* Keep background same */
-  color: inherit !important;              /* Keep text color same */
-  box-shadow: none !important;             /* Remove shadows and outlines */
+  background-color: inherit !important;
+  /* Keep background same */
+  color: inherit !important;
+  /* Keep text color same */
+  box-shadow: none !important;
+  /* Remove shadows and outlines */
   outline: none !important;
-  border-color: inherit !important;        /* Keep border same */
-  cursor: pointer !important;               /* Keep pointer cursor */
+  border-color: inherit !important;
+  /* Keep border same */
+  cursor: pointer !important;
+  /* Keep pointer cursor */
+}
+
+footer {
+  padding: 96px 0 32px 0;
+  background-color: #FFFFFF;
+  font-size: 14px;
 }
