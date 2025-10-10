@@ -37,12 +37,12 @@
                 ]);
                 ?>
             </div>
-            <div class="col-md-3 mb-3 order-4 order-md-4" dir="ltr" bis_skin_checked="1">
+            <div class="col-md-3 mb-3 order-4 order-md-4 text-center" dir="ltr" bis_skin_checked="1">
                 <p class="logo-wrapper">
                     <a href="/" class="logo"><img src="https://simurghnameh.com/assets/logo/logo-black.png"
                             alt="سیمرغنامه"></a>
                 </p>
-                <p class="socials text-muted text-end">
+                <p class="socials text-muted text-md-end">
                     <a class="link-dark text-decoration-none text-reset"
                         href="mailto:info@simurghnameh.com">info@simurghnameh.com</a><br>
                     <a class="link-dark text-decoration-none text-reset" href="https://x.com/simurghnameh"
