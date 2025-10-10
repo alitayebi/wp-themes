@@ -42,43 +42,50 @@ body {
   color: var(--black);
   line-height: 1.75;
 }
-h1.page-title, h3.card-view-title {
-    margin: 0;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
+
+h1.page-title,
+h3.card-view-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
 }
+
 .text-black2 {
   color: var(--black) !important;
   font-weight: 500 !important;
 }
+
 .menu {
   position: fixed;
   top: 30px;
   right: 96px;
   margin: 0;
   padding: 0;
-  z-index: 100;  
+  z-index: 100;
 }
+
 .menu-item {
   background-color: white;
   padding-top: 5px;
 }
+
 .menu-secondary::before {
   content: " ";
   display: inline-block;
   width: 24px;
   height: 48px;
   vertical-align: bottom;
-  background-image: url("/assets/components/round-right.png")    
+  background-image: url("/assets/components/round-right.png")
 }
+
 .menu-secondary::after {
   content: " ";
   display: inline-block;
   width: 24px;
   height: 48px;
   vertical-align: bottom;
-  background-image: url("/assets/components/round-left.png");    
+  background-image: url("/assets/components/round-left.png");
 }
 
 
@@ -157,16 +164,20 @@ h6 {
   height: 200px;
   z-index: 100;
 }
-.btn:focus, .btn:active,
-.navbar-toggler:focus, .navbar-toggler:active {
+
+.btn:focus,
+.btn:active,
+.navbar-toggler:focus,
+.navbar-toggler:active {
   box-shadow: none !important;
   outline: none !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   z-index: 10000;
 
 }
+
 /* default (closed) — menu image */
 .navbar-toggler[data-bs-target="#offcanvasTop"] .navbar-toggler-icon {
   /* size/fit */
@@ -182,8 +193,7 @@ h6 {
 
 
 /* when offcanvas is open — close (X) image */
-body:has(#offcanvasTop.show)
-  .navbar-toggler[data-bs-target="#offcanvasTop"] .navbar-toggler-icon {
+body:has(#offcanvasTop.show) .navbar-toggler[data-bs-target="#offcanvasTop"] .navbar-toggler-icon {
   --bs-navbar-toggler-icon-bg: url('https://simurghnameh.com/assets/components/btn-d-c-48.png');
 }
 
@@ -300,15 +310,30 @@ body:has(#offcanvasTop.show)
 
 .hero--has-bg h1,
 .hero--has-bg .meta {
-  color: #fff; /* force white text */
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* subtle glow */
+  color: #fff;
+  /* force white text */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  /* subtle glow */
 }
+
 .entry-content {
   line-height: 2;
   text-align: justify;
 }
+
+.mobile-menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  width: 48px;
+  height: 48px;
+  z-index: 120;
+}
+
 .mobile-menu-logo {
   width: 60vw;
+  width: 200px;
+  height: 200px;
   margin-top: 20px;
   margin-left: 20px;
   float: left;

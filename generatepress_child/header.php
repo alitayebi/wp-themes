@@ -60,11 +60,11 @@ if (!defined('ABSPATH')) {
   }
   ?>
   <header class="hero p-0" >
-    <div class="container-fluid p-0 pb-2 <?php echo esc_attr("$color_class $extra_class"); ?>" <?php if (is_single()): ?> style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>"<?php endif; ?>>
+    <div class="container-fluid p-0 pb-2 position-relative <?php echo esc_attr("$color_class $extra_class"); ?>" <?php if (is_single()): ?> style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>"<?php endif; ?>>
       <div class="row d-flex p-0 align-items-end position-relative" <?php if (is_single()): ?> style="min-height: <?php echo (int) $size; ?>px;"<?php endif; ?>>
-        <div class="col">
+        <div class="col-md-3">
           <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-toggler mobile-menu-btn border-0" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -93,7 +93,7 @@ if (!defined('ABSPATH')) {
             ?>
           </nav>
         </div>
-        <div class="col-6" style="margin-top:140px;">
+        <div class="col-md-6" style="margin-top:140px;">
           <?php if (is_front_page()): ?>
             <div class="row">
               <h1 class="fw-bold text-black2 page-title m-0"><?php _e('شیوه‌نامه‌ها', 'gp-child'); ?></h1>
@@ -134,7 +134,7 @@ if (!defined('ABSPATH')) {
             </div>
           <?php endif; ?>
         </div>
-        <div class="col">
+        <div class="col-md-3">
           <a class="navbar-brand brand" href="<?php echo esc_url(home_url('/')); ?>">
             <?php if (is_front_page()): ?>
               <!-- Front-page logo -->
