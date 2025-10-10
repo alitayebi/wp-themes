@@ -24,13 +24,13 @@
         );
         ?>
     </div>
-    <div>
+    <div class="pt-3">
         <?php
         $tags = get_the_tags();
         if ($tags) {
             $tags = array_slice($tags, 0, 2);
             foreach ($tags as $t) {
-                echo '<a class="btn btn-outline-dark btn-sm rounded-0" href="' . esc_url(get_tag_link($t)) . '">' . esc_html($t->name) . '</a>';
+                echo '<a class="btn btn-outline-dark mx-2 btn-sm rounded-0" href="' . esc_url(get_tag_link($t)) . '">' . esc_html($t->name) . '</a>';
             }
         } else {
             $cats_small = array_slice(get_the_category(), 0, 2);
