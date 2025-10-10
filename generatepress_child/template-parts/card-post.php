@@ -30,12 +30,12 @@
         if ($tags) {
             $tags = array_slice($tags, 0, 2);
             foreach ($tags as $t) {
-                echo '<a class="btn btn-outline-dark mx-2 btn-sm rounded-0" href="' . esc_url(get_tag_link($t)) . '">' . esc_html($t->name) . '</a>';
+                echo '<a class="btn btn-outline-dark me-2 btn-sm rounded-0" href="' . esc_url(get_tag_link($t)) . '">' . esc_html($t->name) . '</a>';
             }
         } else {
             $cats_small = array_slice(get_the_category(), 0, 2);
             foreach ($cats_small as $c) {
-                echo '<a class="btn btn-outline-dark btn-sm rounded-0" href="' . esc_url(get_category_link($c)) . '">' . esc_html($c->name) . '</a>';
+                echo '<a class="btn btn-outline-dark me-2 btn-sm rounded-0" href="' . esc_url(get_category_link($c)) . '">' . esc_html($c->name) . '</a>';
             }
         }
         ?>
