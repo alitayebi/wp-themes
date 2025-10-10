@@ -362,3 +362,8 @@ footer {
   background-color: #FFFFFF;
   font-size: 14px;
 }
+
+footer.row {
+  width: calc(100% - 192px);
+  margin: 0 auto;
+}
