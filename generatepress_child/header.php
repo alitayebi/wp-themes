@@ -21,6 +21,8 @@ if (!defined('ABSPATH')) {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+  <script type="https://code.jquery.com/jquery-3.7.1.min.js" src="/assets/vendors/jquery-3.6.0.js"></script>
+
 </head>
 
 <body <?php body_class(); ?> <?php generate_do_microdata('body'); ?>>
@@ -59,9 +61,10 @@ if (!defined('ABSPATH')) {
     }
   }
   ?>
-  <header class="hero p-0" >
-    <div class="container-fluid p-0 pb-2 position-relative <?php echo esc_attr("$color_class $extra_class"); ?>" <?php if (is_single()): ?> style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>"<?php endif; ?>>
-      <div class="row d-flex p-0 align-items-end position-relative" <?php if (is_single()): ?> style="min-height: <?php echo (int) $size; ?>px;"<?php endif; ?>>
+  <header class="hero p-0">
+    <div class="container-fluid p-0 pb-2 position-relative <?php echo esc_attr("$color_class $extra_class"); ?>" <?php if (is_single()): ?> style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>" <?php endif; ?>>
+      <div class="row d-flex p-0 align-items-end position-relative" <?php if (is_single()): ?>
+          style="min-height: <?php echo (int) $size; ?>px;" <?php endif; ?>>
         <div class="col-md-3">
           <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler mobile-menu-btn border-0" type="button" data-bs-toggle="offcanvas"
@@ -129,9 +132,10 @@ if (!defined('ABSPATH')) {
                   echo esc_html(implode(' • ', array_filter([$author, $relative])));
                   ?>
                   <div class="float-end">
-                    <button type="button" class="btn btn-light rounded-circle shadow-sm btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="bottom" data-copy="{{site.url}}{{page.url}}" title="کپی لینک">
+                    <button type="button" class="btn btn-light rounded-circle shadow-sm btn-copy js-tooltip js-copy"
+                      data-toggle="tooltip" data-placement="bottom" data-copy="{{site.url}}{{page.url}}" title="کپی لینک">
                       <i class="bi bi-share-fill"></i>
-                    </button>                    
+                    </button>
                   </div>
                 </div>
               </div>
@@ -152,10 +156,10 @@ if (!defined('ABSPATH')) {
         <div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
           <div class="">
             <img class='mobile-menu-logo' src="https://simurghnameh.com/assets/logo-l02.png" class="layer-02">
-  
+
           </div>
           <div class="offcanvas-body">
-  
+
             <?php
             wp_nav_menu([
               'theme_location' => 'primary',
