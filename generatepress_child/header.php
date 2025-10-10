@@ -133,7 +133,7 @@ if (!defined('ABSPATH')) {
                   ?>
                   <div class="float-end">
                     <button type="button" class="btn btn-light rounded-circle shadow-sm btn-copy js-tooltip js-copy"
-                      data-toggle="tooltip" data-placement="bottom" data-copy="{{site.url}}{{page.url}}" title="کپی لینک">
+                      data-toggle="tooltip" data-placement="bottom" data-copy="<?php the_permalink(); ?>" title="کپی لینک">
                       <i class="bi bi-share-fill"></i>
                     </button>
                   </div>
