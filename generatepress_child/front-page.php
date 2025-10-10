@@ -54,7 +54,7 @@ get_header(); ?>
         $is_featured = has_term(10, 'post_tag', get_the_ID());
 
         // Classes for grid
-        $col_class = $is_featured ? 'col-12 col-md-4' : 'col-6 col-md-2';
+        $col_class = $is_featured ? 'col-12 col-md-4' : 'col-12 col-md-4';
         // Image sizes
         $img_size = $is_featured ? 'large' : 'medium';
         $img_class = 'w-100 card-img-top img-fluid';
