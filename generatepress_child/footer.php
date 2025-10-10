@@ -1,14 +1,14 @@
 </main>
 <footer class="py-5 text-center bg-white small">
         <div class="row  text-md-start" bis_skin_checked="1">
-            <div class="col-12 col mb-3 order-3 order-md-1" bis_skin_checked="1">
+            <div class="col-md mb-3 order-3 order-md-1" bis_skin_checked="1">
                 <h5>تماس با ما</h5>
                 <p class="text-muted">
                     تهران، بلوار کریم‌خان، خیابان نجات‌الهی، خیابان اراک، کوچه مهر، بن‌بست خسروی، پلاک ۴، زنگ ۱<br>
                     ۰۲۱۸۸۹۳۷۱۶۸
                 </p>
             </div>
-            <div class="col-12 col mb-3 order-1 order-md-2" bis_skin_checked="1">
+            <div class="col-md mb-3 order-1 order-md-2" bis_skin_checked="1">
                 <h5>سیمرغنامه</h5>
                 <?php
                 wp_nav_menu([
@@ -22,7 +22,7 @@
                 ]);
                 ?>                
             </div>
-            <div class="col-12 col mb-3 order-2 order-md-3" bis_skin_checked="1">
+            <div class="col-md mb-3 order-2 order-md-3" bis_skin_checked="1">
                 <h5>سی‌مرغ شمایید</h5>
                 <?php
                 wp_nav_menu([
@@ -36,8 +36,8 @@
                 ]);
                 ?>
             </div>
-            <div class="col-12 col"></div>
-            <div class="col-12 col mb-3 order-4 order-md-4 text-center" dir="ltr" bis_skin_checked="1">
+            <div class="col-md"></div>
+            <div class="col-md mb-3 order-4 order-md-4 text-center" dir="ltr" bis_skin_checked="1">
                 <p class="logo-wrapper">
                     <a href="/" class="logo"><img src="https://simurghnameh.com/assets/logo/logo-black.png"
                             alt="سیمرغنامه"></a>
