@@ -36,8 +36,8 @@
                 ]);
                 ?>
             </div>
-            <div class="col-md">-</div>
-            <div class="col-md mb-3 order-4 order-md-4 text-center" dir="ltr" bis_skin_checked="1">
+            <div class="col-md mb-3 order-5 order-md-4">-</div>
+            <div class="col-md mb-3 order-4 order-md-5 text-center" dir="ltr" bis_skin_checked="1">
                 <p class="logo-wrapper">
                     <a href="/" class="logo"><img src="https://simurghnameh.com/assets/logo/logo-black.png"
                             alt="سیمرغنامه"></a>
