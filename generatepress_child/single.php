@@ -6,10 +6,6 @@ get_header(); ?>
   <div class="row post-content py-5">
     <div class="col-sm-8 mx-auto">
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <?php if (has_post_thumbnail()): ?>
-          <figure><?php the_post_thumbnail('full'); ?></figure>
-        <?php endif; ?>
-
         <div class="entry-content">
           <?php the_content(); ?>
         </div>
