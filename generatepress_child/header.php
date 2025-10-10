@@ -116,7 +116,7 @@ if (!defined('ABSPATH')) {
               </div>
             </div>
           <?php else: ?>
-            <div class="row mt-auto pt-5">
+            <div class="row mt-auto py-3">
               <div class="col px-4 mx-auto">
                 <h1><?php the_title(); ?></h1>
                 <div class="meta fd">
