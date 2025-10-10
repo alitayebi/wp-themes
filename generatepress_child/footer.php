@@ -18,7 +18,7 @@
                     'items_wrap' => '<ul class="nav m-0 flex-column">%3$s</ul>',
                     'fallback_cb' => false,
                     // wrap <a> text in a span with the class you want
-                    'link_before' => '<span class="nav-link text-black2">',
+                    'link_before' => '<span class="nav-link">',
                     'link_after' => '</span>',
                 ]);
                 ?>                
@@ -32,7 +32,7 @@
                     'items_wrap' => '<ul class="nav m-0 flex-column">%3$s</ul>',
                     'fallback_cb' => false,
                     // wrap <a> text in a span with the class you want
-                    'link_before' => '<span class="nav-link text-black2">',
+                    'link_before' => '<span class="nav-link">',
                     'link_after' => '</span>',
                 ]);
                 ?>
