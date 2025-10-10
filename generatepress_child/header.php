@@ -61,7 +61,7 @@ if (!defined('ABSPATH')) {
   ?>
   <header class="hero p-0" >
     <div class="container-fluid p-0">
-      <div class="row <?php echo esc_attr("$color_class $extra_class"); ?> d-flex p-0 align-items-end position-relative" style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>">
+      <div class="row <?php echo esc_attr("$color_class $extra_class"); ?> d-flex p-0 align-items-end position-relative" <?php if (is_single()): ?> style="min-height: <?php echo (int) $size; ?>px; <?php echo esc_attr($bg_style); ?>"<?php endif; ?>>
         <div class="col">
           <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
@@ -96,8 +96,8 @@ if (!defined('ABSPATH')) {
         <div class="col-6" style="margin-top:140px;">
           <?php if (is_front_page()): ?>
             <div class="row">
+              <h1 class="fw-bold text-black2 page-title m-0"><?php _e('شیوه‌نامه‌ها', 'gp-child'); ?></h1>
               <div class="col-6 col-lg-8">
-                <h1 class="fw-bold text-black2 page-title m-0"><?php _e('شیوه‌نامه‌ها', 'gp-child'); ?></h1>
                 <div class="text-muted fd">
                   <?php $pc = wp_count_posts('post')->publish;
                   printf(_n('%s مطلب', '%s مطلب', $pc, 'gp-child'), number_format_i18n($pc)); ?>
