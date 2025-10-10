@@ -363,7 +363,8 @@ footer {
   font-size: 14px;
 }
 
-footer > .row {
+footer > .row, .copyright {
   width: calc(100% - 192px);
   margin: 0 auto;
 }
+
