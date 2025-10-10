@@ -5,92 +5,110 @@
             <div class="col-md-3 mb-3" bis_skin_checked="1">
                 <h5>تماس با ما</h5>
                 <p class="text-muted">
-                تهران، بلوار کریم‌خان، خیابان نجات‌الهی، خیابان اراک، کوچه مهر، بن‌بست خسروی، پلاک ۴، زنگ ۱<br>
-                ۰۲۱۸۸۹۳۷۱۶۸
+                    تهران، بلوار کریم‌خان، خیابان نجات‌الهی، خیابان اراک، کوچه مهر، بن‌بست خسروی، پلاک ۴، زنگ ۱<br>
+                    ۰۲۱۸۸۹۳۷۱۶۸
                 </p>
             </div>
             <div class="col-md-3 mb-3" bis_skin_checked="1">
                 <h5>سیمرغنامه</h5>
-                <ul class="nav m-0 flex-column">
-                    <li class="nav-item mb-2"><a href="/about-us#s01" class="nav-link p-0 text-body-secondary">چرا سیمرغنامه؟</a></li>
-                    <li class="nav-item mb-2"><a href="/about-us#s02" class="nav-link p-0 text-body-secondary">رؤیای سیمرغنامه</a></li>
-                    <li class="nav-item mb-2"><a href="/about-us#s03" class="nav-link p-0 text-body-secondary">روش ما</a></li>
-                    <li class="nav-item mb-2"><a href="/about-us#s04" class="nav-link p-0 text-body-secondary">تا امروز چه کرده‌ایم؟</a></li>
-                </ul>
+                <?php
+                wp_nav_menu([
+                    'theme_location' => 'footer-menu1',
+                    'container' => false,
+                    'items_wrap' => '<ul class="nav m-0 flex-column">%3$s</ul>',
+                    'fallback_cb' => false,
+                    // wrap <a> text in a span with the class you want
+                    'link_before' => '<span class="nav-link text-black2">',
+                    'link_after' => '</span>',
+                ]);
+                ?>                
             </div>
             <div class="col-md-3 mb-3" bis_skin_checked="1">
-                <h5>سیمرغ شمایید</h5>
-                <ul class="nav m-0 flex-column">
-                    <li class="nav-item mb-2"><a href="/about-us#s05" class="nav-link p-0 text-body-secondary">شما چه کمکی می‌کنید؟</a></li>
-                    <li class="nav-item mb-2"><a href="/about-us#s06" class="nav-link p-0 text-body-secondary">داوطلبان</a></li>
-                    <li class="nav-item mb-2"><a href="/about-us#s07" class="nav-link p-0 text-body-secondary">نهادهای همکار</a></li>
-                    <li class="nav-item mb-2"><a href="/about-us#s08" class="nav-link p-0 text-body-secondary">همکاران امروز</a></li>
-                </ul>
+                <h5>سی‌مرغ شمایید</h5>
+                <?php
+                wp_nav_menu([
+                    'theme_location' => 'footer-menu2',
+                    'container' => false,
+                    'items_wrap' => '<ul class="nav m-0 flex-column">%3$s</ul>',
+                    'fallback_cb' => false,
+                    // wrap <a> text in a span with the class you want
+                    'link_before' => '<span class="nav-link text-black2">',
+                    'link_after' => '</span>',
+                ]);
+                ?>
             </div>
             <div class="col-md-3 mb-3" dir="ltr" bis_skin_checked="1">
                 <p class="logo-wrapper">
-                    <a href="/" class="logo"><img src="https://simurghnameh.com/assets/logo/logo-black.png" alt="سیمرغنامه"></a>
+                    <a href="/" class="logo"><img src="https://simurghnameh.com/assets/logo/logo-black.png"
+                            alt="سیمرغنامه"></a>
                 </p>
                 <p class="socials text-muted text-end">
-                    <a class="link-dark text-decoration-none text-reset" href="mailto:info@simurghnameh.com">info@simurghnameh.com</a><br>
-                    <a class="link-dark text-decoration-none text-reset" href="https://x.com/simurghnameh" target="_blank" class="social">twitter</a>
-                    <a class="link-dark text-decoration-none text-reset" href="https://instagram.com/simurgh.nameh" target="_blank" class="social">instagram</a>
-                    <a class="link-dark text-decoration-none text-reset" href="https://www.linkedin.com/company/simurghnameh/" target="_blank" class="social">linkedin</a>
-                    <a class="link-dark text-decoration-none text-reset" href="https://www.youtube.com/@Simurghnameh" target="_blank" class="social">youtube</a>
-                </p>                
-            
+                    <a class="link-dark text-decoration-none text-reset"
+                        href="mailto:info@simurghnameh.com">info@simurghnameh.com</a><br>
+                    <a class="link-dark text-decoration-none text-reset" href="https://x.com/simurghnameh"
+                        target="_blank" class="social">twitter</a>
+                    <a class="link-dark text-decoration-none text-reset" href="https://instagram.com/simurgh.nameh"
+                        target="_blank" class="social">instagram</a>
+                    <a class="link-dark text-decoration-none text-reset"
+                        href="https://www.linkedin.com/company/simurghnameh/" target="_blank"
+                        class="social">linkedin</a>
+                    <a class="link-dark text-decoration-none text-reset" href="https://www.youtube.com/@Simurghnameh"
+                        target="_blank" class="social">youtube</a>
+                </p>
+
             </div>
         </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-between px-0 py-4 my-4 border-top small text-muted" bis_skin_checked="1">
+        <div class="d-flex flex-column flex-sm-row justify-content-between px-0 py-4 my-4 border-top small text-muted"
+            bis_skin_checked="1">
             <p class="socials text-muted">
                 <a class="link-dark text-decoration-none text-reset" href="#">شرایط و ضوابط</a><br>
-            </p>                
+            </p>
             <p>All right reserved to SIMURGHNAMEH 2025</p>
         </div>
     </div>
 </footer>
 <script>
     function copyToClipboard(text, el) {
-      var copyTest = document.queryCommandSupported('copy');
-      var elOriginalText = el.attr('data-bs-original-title');
-    
-      if (copyTest === true) {
-        var copyTextArea = document.createElement("textarea");
-        copyTextArea.value = text;
-        document.body.appendChild(copyTextArea);
-        copyTextArea.select();
-        try {
-          var successful = document.execCommand('copy');
-          var msg = successful ? 'کپی شد.' : 'کپی نشد!';
-          el.attr('data-bs-original-title', msg).tooltip('show');
-        } catch (err) {
-          console.log('Oops, unable to copy');
+        var copyTest = document.queryCommandSupported('copy');
+        var elOriginalText = el.attr('data-bs-original-title');
+
+        if (copyTest === true) {
+            var copyTextArea = document.createElement("textarea");
+            copyTextArea.value = text;
+            document.body.appendChild(copyTextArea);
+            copyTextArea.select();
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'کپی شد.' : 'کپی نشد!';
+                el.attr('data-bs-original-title', msg).tooltip('show');
+            } catch (err) {
+                console.log('Oops, unable to copy');
+            }
+            document.body.removeChild(copyTextArea);
+            el.attr('data-bs-original-title', elOriginalText);
+        } else {
+            // Fallback if browser doesn't support .execCommand('copy')
+            window.prompt("Copy to clipboard: Ctrl+C or Command+C, Enter", text);
         }
-        document.body.removeChild(copyTextArea);
-        el.attr('data-bs-original-title', elOriginalText);
-      } else {
-        // Fallback if browser doesn't support .execCommand('copy')
-        window.prompt("Copy to clipboard: Ctrl+C or Command+C, Enter", text);
-      }
     }
-    
-    $(document).ready(function() {
-      // Initialize
-      // ---------------------------------------------------------------------
-    
-      // Tooltips
-      // Requires Bootstrap 3 for functionality
-      $('.js-tooltip').tooltip();
-    
-      // Copy to clipboard
-      // Grab any text in the attribute 'data-copy' and pass it to the 
-      // copy function
-      $('.js-copy').click(function() {
-        var text = $(this).attr('data-copy');
-        var el = $(this);
-        copyToClipboard(text, el);
-      });
+
+    $(document).ready(function () {
+        // Initialize
+        // ---------------------------------------------------------------------
+
+        // Tooltips
+        // Requires Bootstrap 3 for functionality
+        $('.js-tooltip').tooltip();
+
+        // Copy to clipboard
+        // Grab any text in the attribute 'data-copy' and pass it to the 
+        // copy function
+        $('.js-copy').click(function () {
+            var text = $(this).attr('data-copy');
+            var el = $(this);
+            copyToClipboard(text, el);
+        });
     });
-  
+
 
 </script>
