@@ -284,7 +284,7 @@ body:has(#offcanvasTop.show)
   margin-right: 0 !important
 }
 
-.hero.hero--has-bg::before {
+.hero--has-bg::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -293,13 +293,13 @@ body:has(#offcanvasTop.show)
   z-index: 0;
 }
 
-.hero.hero--has-bg>* {
+.hero--has-bg>* {
   position: relative;
   z-index: 1;
 }
 
-.hero.hero--has-bg h1,
-.hero.hero--has-bg .meta {
+.hero--has-bg h1,
+.hero--has-bg .meta {
   color: #fff; /* force white text */
   text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* subtle glow */
 }
