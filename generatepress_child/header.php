@@ -109,14 +109,14 @@ if (!defined('ABSPATH')) {
               <div class="col-6 col-lg-4">
                 <div class="d-flex align-items-center gap-2 text-muted mt-auto">
                   <span>ترتیب</span>
-<select class="form-select form-select-sm w-auto" onchange="location.href=this.value">
-  <option value="<?php echo esc_url( remove_query_arg('orderby') ); ?>" <?php selected( !isset($_GET['orderby']) ); ?>>
-    <?php _e('جدیدترین', 'gp-child'); ?>
-  </option>
-  <option value="<?php echo esc_url( add_query_arg('orderby', 'views') ); ?>" <?php selected( isset($_GET['orderby']) && $_GET['orderby'] === 'views' ); ?>>
-    <?php _e('پربازدیدترین', 'gp-child'); ?>
-  </option>
-</select>
+                  <select class="form-select form-select-sm w-auto" onchange="location.href=this.value">
+                    <option value="<?php echo esc_url(remove_query_arg('orderby')); ?>" <?php selected(!isset($_GET['orderby'])); ?>>
+                      <?php _e('جدیدترین', 'gp-child'); ?>
+                    </option>
+                    <option value="<?php echo esc_url(add_query_arg('orderby', 'views')); ?>" <?php selected(isset($_GET['orderby']) && $_GET['orderby'] === 'views'); ?>>
+                      <?php _e('پربازدیدترین', 'gp-child'); ?>
+                    </option>
+                  </select>
 
                 </div>
               </div>
