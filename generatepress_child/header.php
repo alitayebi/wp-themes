@@ -122,7 +122,7 @@ if (!defined('ABSPATH')) {
               </div>
             </div>
           <?php else: ?>
-            <div class="row mb-5">
+            <div class="row mb-5 bg-black-sim p-3 rounded-3">
               <h1 class="display-6"><?php the_title(); ?></h1>
               <div class="meta fd">
                 <?php
@@ -134,7 +134,7 @@ if (!defined('ABSPATH')) {
                 echo esc_html(implode(' • ', array_filter([$author, $relative])));
                 ?>
                 <div class="float-end">
-                  <button type="button" class="btn btn-light rounded-circle shadow-sm btn-copy js-tooltip js-copy"
+                  <button type="button" class="btn btn-link border-0 text-reset shadow-sm btn-copy js-tooltip js-copy"
                     data-toggle="tooltip" data-placement="bottom" data-copy="<?php the_permalink(); ?>" title="کپی لینک">
                     <i class="bi bi-share-fill"></i>
                   </button>
