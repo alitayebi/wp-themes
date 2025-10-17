@@ -2,6 +2,7 @@
 /* Single Post Template */
 get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
+<?php setPostViews(get_the_ID()); ?>
 <div class="container">
   <div class="row post-content py-5">
     <div class="col-sm-8 mx-auto">

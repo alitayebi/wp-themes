@@ -72,11 +72,11 @@ if (!defined('ABSPATH')) {
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-0 mb-2 mb-lg-0">
-                <li class="nav-item">
+              <ul class="navbar-nav d-flex mx-0 mb-2 mb-lg-0">
+                <li class="nav-item order-2 order-md-1">
                   <a class="nav-link text-black2" href="/about-en">about us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item order-1 order-md-2">
                   <a class="nav-link text-black2" aria-current="page" href="/about-us">دربارۀ سیمرغنامه</a>
                 </li>
               </ul>
@@ -96,10 +96,10 @@ if (!defined('ABSPATH')) {
             ?>
           </nav>
         </div>
-        <div class="col-md-6" style="margin-top:140px;">
+        <div class="col-md-6 px-4" style="margin-top:140px;">
           <?php if (is_front_page()): ?>
             <div class="row">
-              <h1 class="fw-bold text-black2 page-title m-0"><?php _e('شیوه‌نامه‌ها', 'gp-child'); ?></h1>
+              <h1 class="page-title text-dark mb-2"><?php _e('شیوه‌نامه‌ها', 'gp-child'); ?></h1>
               <div class="col-6 col-lg-8">
                 <div class="text-muted fd">
                   <?php $pc = wp_count_posts('post')->publish;
@@ -119,24 +119,22 @@ if (!defined('ABSPATH')) {
               </div>
             </div>
           <?php else: ?>
-            <div class="row mt-auto py-3">
-              <div class="col px-4 mx-auto">
-                <h1><?php the_title(); ?></h1>
-                <div class="meta fd">
-                  <?php
-                  $author = get_the_author();
+            <div class="row mb-5">
+              <h1 class="display-6"><?php the_title(); ?></h1>
+              <div class="meta fd">
+                <?php
+                $author = get_the_author();
 
-                  // relative time: "n days ago"
-                  $relative = human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ' . __('پیش', 'textdomain');
+                // relative time: "n days ago"
+                $relative = human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ' . __('پیش', 'textdomain');
 
-                  echo esc_html(implode(' • ', array_filter([$author, $relative])));
-                  ?>
-                  <div class="float-end">
-                    <button type="button" class="btn btn-light rounded-circle shadow-sm btn-copy js-tooltip js-copy"
-                      data-toggle="tooltip" data-placement="bottom" data-copy="<?php the_permalink(); ?>" title="کپی لینک">
-                      <i class="bi bi-share-fill"></i>
-                    </button>
-                  </div>
+                echo esc_html(implode(' • ', array_filter([$author, $relative])));
+                ?>
+                <div class="float-end">
+                  <button type="button" class="btn btn-light rounded-circle shadow-sm btn-copy js-tooltip js-copy"
+                    data-toggle="tooltip" data-placement="bottom" data-copy="<?php the_permalink(); ?>" title="کپی لینک">
+                    <i class="bi bi-share-fill"></i>
+                  </button>
                 </div>
               </div>
             </div>
