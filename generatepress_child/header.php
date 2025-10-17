@@ -71,7 +71,7 @@ if (!defined('ABSPATH')) {
               data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="menu collapse navbar-collapse p-2 rounded-pill <?php if (is_single()): ?>bg-black-sim<?php endif; ?>" id="navbarSupportedContent">
+            <div class="menu collapse navbar-collapse p-2 mt-1 rounded-pill <?php if (is_single()): ?>bg-black-sim<?php endif; ?>" id="navbarSupportedContent">
               <ul class="navbar-nav d-flex mx-0 mb-2 mb-lg-0">
                 <li class="nav-item order-2 order-md-1">
                   <a class="nav-link<?php if (is_single()): ?> text-light<?php endif; ?>" href="/about-en">about us</a>
