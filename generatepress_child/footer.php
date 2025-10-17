@@ -1,5 +1,6 @@
 </main>
 <footer class="pt-5 text-center bg-white small">
+    <div class="container">
         <div class="row  text-md-start" bis_skin_checked="1">
             <div class="col-md mb-3 order-3 order-md-1" bis_skin_checked="1">
                 <h6>تماس با ما</h6>
@@ -58,15 +59,15 @@
 
             </div>
         </div>
-        <div class="border-top"
-            bis_skin_checked="1">
-            <div class="copyright d-flex flex-column flex-sm-row justify-content-between px-0 pt-4 my-4 small text-muted">
-                <p class="socials text-muted">
-                    <a class="link-dark text-decoration-none text-reset" href="#">شرایط و ضوابط</a><br>
-                </p>
-                <p>All right reserved to SIMURGHNAMEH 2025</p>
-            </div>
+    </div>
+    <div class="container-fluid border-top">
+        <div class="copyright d-flex flex-column flex-sm-row justify-content-between px-0 pt-4 my-4 small text-muted">
+            <p class="socials text-muted">
+                <a class="link-dark text-decoration-none text-reset" href="#">شرایط و ضوابط</a><br>
+            </p>
+            <p>All right reserved to SIMURGHNAMEH 2025</p>
         </div>
+    </div>
 </footer>
 <script>
     function copyToClipboard(text, el) {
