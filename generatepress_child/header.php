@@ -71,13 +71,13 @@ if (!defined('ABSPATH')) {
               data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="menu collapse navbar-collapse" id="navbarSupportedContent" style="margin-top:30px;">
+            <div class="menu collapse navbar-collapse p-3 rounded-pill <?php if (is_single()): ?>bg-black-sim<?php endif; ?>" id="navbarSupportedContent" style="margin-top:30px;">
               <ul class="navbar-nav d-flex mx-0 mb-2 mb-lg-0">
                 <li class="nav-item order-2 order-md-1">
-                  <a class="nav-link text-black2" href="/about-en">about us</a>
+                  <a class="nav-link<?php if (is_single()): ?> text-light<?php endif; ?>" href="/about-en">about us</a>
                 </li>
                 <li class="nav-item order-1 order-md-2">
-                  <a class="nav-link text-black2" aria-current="page" href="/about-us">دربارۀ سیمرغنامه</a>
+                  <a class="nav-link<?php if (is_single()): ?> text-light<?php endif; ?>" aria-current="page" href="/about-us">دربارۀ سیمرغنامه</a>
                 </li>
               </ul>
               <?php

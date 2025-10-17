@@ -105,7 +105,9 @@ h3.card-view-title {
 .bg-gray-700 {
   background: var(--gray-700);
 }
-
+.bg-black-sim {
+  background: var(--black);
+}
 h1,
 h2,
 h3,
