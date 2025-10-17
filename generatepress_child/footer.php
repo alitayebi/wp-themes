@@ -19,7 +19,7 @@
                         'items_wrap' => '<ul class="nav m-0 flex-column">%3$s</ul>',
                         'fallback_cb' => false,
                         // wrap <a> text in a span with the class you want
-                        'link_before' => '<span class="nav-link p-0 text-muted">',
+                        'link_before' => '<span class="nav-link ps-0 text-muted">',
                         'link_after' => '</span>',
                     ]);
                     ?>                
@@ -33,7 +33,7 @@
                         'items_wrap' => '<ul class="nav m-0 flex-column">%3$s</ul>',
                         'fallback_cb' => false,
                         // wrap <a> text in a span with the class you want
-                        'link_before' => '<span class="nav-link text-muted p-0">',
+                        'link_before' => '<span class="nav-link text-muted ps-0">',
                         'link_after' => '</span>',
                     ]);
                     ?>
@@ -64,7 +64,7 @@
     </section>
     <section class="border-top">
         <div class="container">
-            <div class="copyright d-flex flex-column flex-sm-row justify-content-between px-0 pt-4 my-4 small text-muted">
+            <div class="copyright d-flex flex-column flex-sm-row justify-content-between px-0 pt-4 small text-muted">
                 <p class="socials text-muted">
                     <a class="link-dark text-decoration-none text-reset" href="#">شرایط و ضوابط</a><br>
                 </p>
